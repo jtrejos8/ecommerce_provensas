@@ -1,9 +1,69 @@
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+footer {
     background-color: #FEFBE7;
     color: black;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+    /* border: 1px solid blue; */
+}
+a.logo{
+    /* border: 1px solid blue; */
+    display: block;
+    margin: 5px auto;
+    height: 130px;
+    width: 135px;
+}
+a.logo i{
+    display: block;
+    margin: 2px auto;
+    width: 120px;
+    height: 125px;
+}
+a.logo i.logo{
+    background: url('../../../assets/img/Logo_one.png') no-repeat center;
+    background-size: contain;
+}
+
+li {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.Careers {
+    /* border: 1px solid blueviolet; */
+    cursor: pointer;
+    color: #1E88E5
+}
+.row-2 {
+    /* border: 1px solid black; */
+    /* background-color: #28323C; */
+}
+.check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+  
+.check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+  
+.check-list li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 5px;
+      height: 11px;
+      border-width: 0 2px 2px 0;
+      border-style: solid;
+      border-color: black;
+      transform-origin: bottom left;
+      transform: rotate(45deg);
 }
 /* Movil */
 @media (min-width: 320px) and (max-width: 480px) {footer{position: relative;}}
