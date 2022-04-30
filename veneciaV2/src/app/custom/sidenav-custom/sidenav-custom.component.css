@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, button {
+    font-family: "Acme";
+    font-weight: 500;
+    font-size: 16px;
+    color: #542c1c;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+div.logo{
+    width: 100px;
+    height: 90px;
+    margin-right: auto;
+    order: 1;
+    cursor: pointer;
+    background: url('../../../assets/img/Logo_one.png') no-repeat center;
+    background-size: cover;
+}
+nav {
+    /* border: 1px solid red; */
+    margin-right: auto;
+    order: 2;
+}
+ul.nav_links {
+    list-style: none;
+}
+ul.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+ul.nav_links li a {
+    transition: all 0.3s aese 0s;
+}
+ul.nav_links li a:hover {
+    color: #0088a9;
+}
+
+a.login {
+    /* border: 1px solid green; */
+    order: 3;
+}
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    /* background-color: rgba(0, 136, 169,1); */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169,0.8);
+}
+
+
+
+
+/* Responsive */
+ul li a.store::after{
+    content: 'TIENDA';
+}
+ul li a.we::after{
+    content: 'QUIÉNES SOMOS';
+}
+ul li a.b2b_sales::after{
+    content: 'VENTAS CORPORATIVAS';
+}
+ul li a.contact_us::after{
+    content: 'CONTÁCTANOS';
+}
+/* Movil */
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1px 2%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: white;
+    }
+    div.logo{
+        /* border: 1px solid brown; */
+        width: 50px;
+        height: 55px;
+        margin-right: 0px;
+    }
+    ul.nav_links {
+        list-style: none;
+        /* border: 1px solid yellow; */
+    }
+    ul.nav_links li {
+        padding: 0px 0px;
+        margin-right: 6px;
+    }
+    ul li a.store,
+    ul li a.we,
+    ul li a.b2b_sales,
+    ul li a.contact_us{
+        /* border: 1px solid burlywood; */
+        display: block;
+        width: 40px;
+        height: 45px;
+        padding: 0;
+    }
+    ul li a.store::after,
+    ul li a.we::after,
+    ul li a.b2b_sales::after,
+    ul li a.contact_us::after,
+    ul li a.store::after{
+        content: '';
+    }
+    ul li a.store{background: url('../../../assets/img/restaurant.png') no-repeat center;}
+    ul li a.we{background: url('../../../assets/img/travel.png') no-repeat center;}
+    ul li a.b2b_sales{background: url('../../../assets/img/bed.png') no-repeat center;}
+    ul li a.contact_us{background: url('../../../assets/img/contact.png') no-repeat center;}
+
+    ul li a.store{margin-left: 1%;}
+    ul li a.we{margin-left: 17%;}
+    ul li a.b2b_sales{margin-left: 32%;}
+    ul li a.contact_us{margin-left: 47%;}
+
+    ul li a.store,
+    ul li a.we,
+    ul li a.b2b_sales,
+    ul li a.contact_us
+    {background-size: contain;}
+    button {
+        border: 1px solid red;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+}
+
+
+/* Movil 2 */
+@media (min-width: 375px) and (max-width: 480px) {
+    ul li a.store,
+    ul li a.we,
+    ul li a.b2b_sales,
+    ul li a.contact_us
+    {margin-left: 10px;}
+    div.logo{margin-right: 10px;}
+}
+
+/* Movil 3 */
+@media (min-width: 425px) and (max-width: 480px) {
+    ul li a.store,
+    ul li a.we,
+    ul li a.b2b_sales,
+    ul li a.contact_us
+    {margin-left: 15px;}
+    div.logo{margin-right: 15px;}
+}

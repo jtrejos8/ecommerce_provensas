@@ -5,15 +5,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 /* Movil */
-@media (min-width: 320px) and (max-width: 768px) {}
+@media (min-width: 320px) and (max-width: 480px) {
+    /* body{background-color: blue;} */
+}
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 480px) and (max-width: 768px) {}
 /* Portatil */
-@media (min-width: 1024px) and (max-width: 1440px) {}
-
-
-/* For Mobile devices: 320px-480px
-For Tablets or iPad: 480px - 768px
-For Laptop or small-size screen: 768px -1024px
-For Desktop or large-size screen: 1024px -1200px
-For Extra-large size device: 1200px and more */
+@media (min-width:  768px) and (max-width: 1024px) {}
+/* Escritorio */
+@media (min-width:  1024px) and (max-width: 1200px) {}
+/* ExtraGrande */
+@media (max-width: 1200px) {}

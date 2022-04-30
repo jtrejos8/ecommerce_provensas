@@ -3,18 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import { CustomRoutingModule } from './custom-routing.module';
 import { AlertComponent } from './alert/alert.component';
+import { SidenavCustomComponent } from './sidenav-custom/sidenav-custom.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
   declarations: [
-    AlertComponent
+    AlertComponent,
+    SidenavCustomComponent
   ],
   imports: [
     CommonModule,
-    CustomRoutingModule
+    CustomRoutingModule,
+    MaterialModule
   ],
   exports: [
-    AlertComponent
+    AlertComponent,
+    SidenavCustomComponent
   ]
 })
 export class CustomModule { }
