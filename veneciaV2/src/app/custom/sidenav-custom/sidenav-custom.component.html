@@ -1,12 +1,21 @@
-<header>
-    <div class="logo"></div>
-    <nav>
-      <ul class="nav_links">
-          <li><a class="store" href=""></a></li>
-          <li><a  class="we" href=""></a></li>
-          <li><a  class="b2b_sales" href=""></a></li>
-          <li><a  class="contact_us" href=""></a></li>
-      </ul>
-    </nav>
-    <a href="" class="login"><button><i class="fa fa-user"></i></button></a>
-</header>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name"></h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="{{nav.route}}" *ngFor="let nav of menuItems">{{nav.name}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
