@@ -5,17 +5,21 @@ import { MaterialRoutingModule } from './material-routing.module';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    
+  ],
   imports: [
     CommonModule,
     LayoutModule,
     MaterialRoutingModule,
     MatIconModule, // Icon
+    MatDialogModule, // Dialog
     MatListModule, // List
     MatSidenavModule, // Sidenav
     MatToolbarModule, // Toolbar
@@ -23,6 +27,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   exports: [
     LayoutModule,
     MatIconModule,
+    MatDialogModule,
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,

@@ -1,0 +1,7 @@
+mat-dialog-content{
+    border: 1px solid black;
+    height: 300px;
+}
+mat-dialog-actions{
+    border: 1px solid red;
+}

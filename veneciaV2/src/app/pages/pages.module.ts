@@ -9,6 +9,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { StoreComponent } from './store/store.component';
 import { B2bSalesComponent } from './b2b-sales/b2b-sales.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { CustomModule } from '../custom/custom.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
   ],
   imports: [
     CommonModule,
+    CustomModule,
     PagesRoutingModule,
     TemplateModule
   ]

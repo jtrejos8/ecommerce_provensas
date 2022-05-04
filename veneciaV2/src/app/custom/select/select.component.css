@@ -1,0 +1,26 @@
+ng-select{
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+    padding: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 40px;
+}
+ng-select:focus{
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+input{
+    border: 1px solid orangered;
+}
+span{
+    border: 1px solid green;
+}
+span.ng-option-label.ng-star-inserted{
+    border: 1px solid green;
+}

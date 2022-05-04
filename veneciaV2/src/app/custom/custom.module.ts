@@ -10,13 +10,17 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { SidenavCustomComponent } from './sidenav-custom/sidenav-custom.component';
 import { SelectComponent } from './select/select.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DialogBodyComponentComponent } from './dialog-body-component/dialog-body-component.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AlertComponent,
     SidenavCustomComponent,
     LoaderComponent,
-    SelectComponent
+    SelectComponent,
+    DialogBodyComponentComponent,
+    DialogComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +32,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   exports: [
     AlertComponent,
+    DialogComponent,
+    DialogBodyComponentComponent,
     SidenavCustomComponent,
     LoaderComponent
   ]
